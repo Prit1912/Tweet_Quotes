@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(7, 38, 104);
+}
+
+.container {
+  background-color: skyblue;
+  height: 500px;
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.main_div {
+  background-color: white;
+  height: 350px;
+  width: 500px;
+  box-shadow: 5px 5px 25px rgb(0, 0, 0);
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote,
+.tweet {
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  width: 60%;
+  margin: 0px 10px;
+  /* width: 200px;
+  height: 40px; */
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.quote:hover,
+.tweet:hover {
+    cursor: pointer;
+    background-color: rgb(36, 36, 92);
+    color: white;
+}
+
+#quotes{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 40px;
+}
+
+#author{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 20px;
+}
+
+h1{
+    color: blue;
+}
+
+/* .quote{
+   position: relative;
+   bottom: -315px;
+   width: 70%;
+   height: 35px;
+   border: none;
+   outline: none;
+   background-color: rgb(35, 35, 216);
+   color: white;
+   font-weight: bolder;
+   letter-spacing: 2px;
+   border-radius: 1rem;
+   font-size: large;
+}
+
+.tweet{
+    background-color: skyblue;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding: 10px;  
+    font-size: large;
+    width: 20%;
+} */
+
+
+@media (max-width: 660px){
+    .container{
+        width: 400px;
+    }
+    .main_div{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .container{
+        width: 300px;
+    }
+    .main_div{
+        width: 200px;
+    }
+}
